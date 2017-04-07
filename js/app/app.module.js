@@ -7,6 +7,9 @@ angular.module('mapApp', [
 
     //internal
     'worldMap',
-    'ajaxResources'
+    'ajaxResources',
+    'filters',
+    'organismForm',
+    'regionForm'
 ]);
 

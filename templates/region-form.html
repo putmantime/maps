@@ -1,0 +1,12 @@
+<form class="ui-widget">
+    <label style="color:white" for="regionForm">Choose a US State: </label>
+    <input id="regionForm"
+           placeholder="e.g. Oregon"
+           type="text"
+           ng-model="location.name"
+           uib-typeahead="region.Name for region in $ctrl.regions | filter:$viewValue | limitTo:200"
+           typeahead-on-select="$ctrl.onSelect($item, $model, $label)"
+           class="form-control"
+           data-ng-click="location.name=''"
+            >
+</form>

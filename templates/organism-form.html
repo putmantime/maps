@@ -1,0 +1,14 @@
+<form class="ui-widget">
+        <label style="color:white" for="orgForm">Choose a species: </label>
+        <input autocomplete="off"
+               id="orgForm"
+               placeholder="e.g. Belted Kingfisher"
+               type="text"
+               ng-model="organism.name"
+               uib-typeahead="org.comName for org in $ctrl.orgs | filter:$viewValue | limitTo:15"
+               typeahead-on-select="$ctrl.onSelect($item, $model, $label)"
+               class="form-control"
+               data-ng-click="organism.name=''"
+               typeahead-min-length="3"
+                >
+</form>
