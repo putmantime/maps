@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html ng-app="mapApp" lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <base href="http://localhost:63342/putmantime/">
+    <!-- external css-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.3/dist/leaflet.css"/>
+
+   <!-- external javascript-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular-route.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular-resource.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-bootstrap/2.5.0/ui-bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-bootstrap/2.5.0/ui-bootstrap-tpls.min.js"></script>
+    <script src="https://unpkg.com/leaflet@1.0.3/dist/leaflet.js"></script>
+
+    <!-- internal javascript -->
+    <script src="js/app/app.module.js"></script>
+    <script src="js/app/app.config.js"></script>
+
+    <!-- components-->
+    <script src="js/app/components/world-map/world-map.module.js"></script>
+    <script src="js/app/components/world-map/world-map.component.js"></script>
+
+    <!-- resources-->
+    <script src="js/app/resources/resources.module.js"></script>
+    <script src="js/app/resources/resources.services.js"></script>
+
+
+</head>
+<body style="padding-top: 80px; background-color: whitesmoke">
+<div><world-map></world-map></div>
+</body>
+</html>

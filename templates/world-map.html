@@ -1,0 +1,43 @@
+<nav class="navbar navbar-custom navbar-fixed-top" style="background-color: #044C29; padding: 20px">
+    <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="row">
+            <div class="navbar-header">
+                <a style="color: whitesmoke" class="navbar-brand" href="/"><u>Recent Bird Sightings in US States</u></a>
+            </div>
+        </div>
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div  class="row">
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <form class="navbar-form navbar-left">
+                    <!--<region-form regions="$ctrl.regionsList"></region-form>-->
+                    <!--<organism-form orgs="$ctrl.speciesList"></organism-form>-->
+                </form>
+            </div>
+        </div>
+        <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container-fluid -->
+</nav>
+<div class="container-fluid" style="padding-top: 110px">
+    <div class="row">
+        <div class="col-md-1"></div>
+        <div class="col-md-10">
+            <div class="panel">
+                <div class="panel-heading">
+                    <div class="well" style="border: solid darkgrey 2px; background-color: #167F39; color:white">
+                        <h4>Region: {{$ctrl.state.Name}}</h4>
+                        <h4>Species: {{$ctrl.currentBird.comName}}
+                            <i>({{$ctrl.currentBird.sciName}})</i></h4>
+                    </div>
+                </div>
+                <div class="panel-body">
+                    <stats-view stats="$ctrl.sightings"></stats-view>
+                    <div style="height: 550px; border: solid darkgrey 2px; border-radius: 4px" id="mapid"></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-1"></div>
+    </div>
+</div>
