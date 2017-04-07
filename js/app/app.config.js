@@ -7,7 +7,6 @@ angular.module('mapApp')
         $locationProvider.html5Mode({
             enabled: true
         });
-
         $routeProvider.
             when("/", {
                 //templateUrl: "/templates/world-map.html"
