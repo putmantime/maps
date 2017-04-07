@@ -9,7 +9,7 @@ function getRandomColor() {
 angular
     .module('worldMap')
     .component('worldMap', {
-        templateUrl: '/putmantime/templates/world-map.html',
+        templateUrl: '/maps/templates/world-map.html',
         //template: '<h1>hello world</h1>',
         controller: function ($filter, $routeParams, allSpecies, getAllSpeciesByRegion, getSpeciesByRegion, regionCodes) {
             //var ctrl = this;
